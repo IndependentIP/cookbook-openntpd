@@ -37,7 +37,7 @@ template '/etc/openntpd/ntpd.conf' do
   source 'ntpd.conf.erb'
   owner 'root'
   group 'root'
-  mode 00644
+  mode 0644
   variables(
     :listen => node['openntpd']['listen'],
     :servers => node['openntpd']['servers']
